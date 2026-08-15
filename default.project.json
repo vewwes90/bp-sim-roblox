@@ -2,20 +2,23 @@
   "name": "bp-sim-roblox",
   "tree": {
     "$className": "DataModel",
-
-    "ServerScriptService": {
-      "$path": "src/server"
-    },
-
-    "StarterPlayer": {
-      "StarterPlayerScripts": {
-        "$path": "src/client"
-      }
-    },
-
     "ReplicatedStorage": {
       "Cutscenes": {
         "$path": "src/shared/Cutscenes"
+      }
+    },
+    "ServerScriptService": {
+      "$path": "src/server"
+    },
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "$path": "src/client"
+      },
+      "$properties": {
+        "AvatarJointUpgrade": "Enabled",
+        "CameraMaxZoomDistance": 128.0,
+        "CharacterBreakJointsOnDeath": false,
+        "CharacterUseJumpPower": false
       }
     }
   }
